@@ -1,0 +1,437 @@
+
+<div class="container">
+
+
+<div class="w-50 p-3">
+    <p class="lead">
+        I am lead paragraph for your reading pleasure. 
+        I am lead paragraph for your reading pleasure. 
+        I am lead paragraph for your reading pleasure.
+        I am lead paragraph for your reading pleasure.
+        I am lead paragraph for your reading pleasure. 
+        I am lead paragraph for your reading pleasure. 
+        I am lead paragraph for your reading pleasure.
+        I am lead paragraph for your reading pleasure.    
+    </p>
+    <p>
+    I am paragraph text for your reading pleasure. 
+    I am paragraph text for your reading pleasure. 
+    I am paragraph text for your reading pleasure.
+    I am paragraph text for your reading pleasure.
+    I am paragraph text for your reading pleasure. 
+    I am paragraph text for your reading pleasure. 
+    I am paragraph text for your reading pleasure.
+    I am paragraph text for your reading pleasure.
+    </p>
+</div>
+
+    <h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h1>
+    <h1>abcdefghijklmnopqrstuvwxyz</h1>
+    <h1 style="font-weight: 900; font-stretch:125%">h1. Bootstrap heading</h1>
+    <h1 class="f-experiment">Just An Experiment Heading</h1>
+<br><br>
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+
+<p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
+<p class="h4">h4. Bootstrap heading</p>
+<p class="h5">h5. Bootstrap heading</p>
+<p class="h6">h6. Bootstrap heading</p>
+
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <h1 class="display-6">Display 6</h1>
+
+    <p class="fs-1">.fs-1 text</p>
+    <p class="fs-2">.fs-2 text</p>
+    <p class="fs-3">.fs-3 text</p>
+    <p class="fs-4">.fs-4 text</p>
+    <p class="fs-5">.fs-5 text</p>
+    <p class="fs-6">.fs-6 text</p>
+
+    <p class="lead">
+        This is a lead paragraph. It stands out from regular paragraphs. This is a lead paragraph. It stands out from regular paragraphs.
+        This is a lead paragraph. It stands out from regular paragraphs. This is a lead paragraph. It stands out from regular paragraphs.
+        This is a lead paragraph. It stands out from regular paragraphs. This is a lead paragraph. It stands out from regular paragraphs.
+    </p>
+    <p>
+        This is a regular paragraph. It is a normal paragraph. This is a regular paragraph. It is a normal paragraph.
+        This is a regular paragraph. It is a normal paragraph. This is a regular paragraph. It is a normal paragraph.
+        This is a regular paragraph. It is a normal paragraph. This is a regular paragraph. It is a normal paragraph.
+        This is a regular paragraph. It is a normal paragraph. This is a regular paragraph. It is a normal paragraph.
+    </p>
+
+
+
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+      <ngb-panel title="Simple">
+        <ng-template ngbPanelContent>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+          labore sustainable VHS.
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel>
+        <ng-template ngbPanelTitle>
+          <span>&#9733; <b>Fancy</b> title &#9733;</span>
+        </ng-template>
+        <ng-template ngbPanelContent>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+          labore sustainable VHS.
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel title="Disabled" [disabled]="true">
+        <ng-template ngbPanelContent>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+          labore sustainable VHS.
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+    
+  
+  
+  
+  
+  
+  <br>
+  <br>
+  <i class="bi bi-balloon-heart-fill icon-xlg text-danger"></i>
+  <i class="bi bi-peace icon-xlg"></i>
+  <i class="bi bi-fire icon-xlg text-warning"></i>
+  <i class="bi bi-tree-fill icon-xlg text-success"></i>
+
+  <br>
+  <br>
+  
+  
+    <p *ngFor="let alert of alerts">
+      <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    </p>
+  
+  
+
+    <br>
+    <br>
+
+
+    <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+    
+    
+      <br>
+    <br>
+    
+<span class="badge text-bg-primary">Primary</span>
+<span class="badge text-bg-secondary">Secondary</span>
+<span class="badge text-bg-success">Success</span>
+<span class="badge text-bg-danger">Danger</span>
+<span class="badge text-bg-warning">Warning</span>
+<span class="badge text-bg-info">Info</span>
+<span class="badge text-bg-light">Light</span>
+<span class="badge text-bg-dark">Dark</span>
+
+<br>    
+<br>
+
+
+
+    <button type="button" class="btn btn-primary mx-2">Primary</button>
+    <button type="button" class="btn btn-secondary mx-2">Secondary</button>
+    <button type="button" class="btn btn-success mx-2">Success</button>
+    <button type="button" class="btn btn-danger mx-2">Danger</button>
+    <button type="button" class="btn btn-warning mx-2">Warning</button>
+    <button type="button" class="btn btn-info mx-2">Info</button>
+    <button type="button" class="btn btn-light mx-2">Light</button>
+    <button type="button" class="btn btn-dark mx-2">Dark</button>
+    
+    <button type="button" class="btn btn-link">Link</button>
+  
+  
+  <br>
+  <br>
+
+  <button type="button" class="btn btn-outline-primary mx-2">Primary</button>
+  <button type="button" class="btn btn-outline-secondary mx-2">Secondary</button>
+  <button type="button" class="btn btn-outline-success mx-2">Success</button>
+  <button type="button" class="btn btn-outline-danger mx-2">Danger</button>
+  <button type="button" class="btn btn-outline-warning mx-2">Warning</button>
+  <button type="button" class="btn btn-outline-info mx-2">Info</button>
+  <button type="button" class="btn btn-outline-light mx-2">Light</button>
+  <button type="button" class="btn btn-outline-dark mx-2">Dark</button>
+  <br>
+  <br>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <span class="visually-hidden">Loading...</span>
+  </button>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Loading...
+  </button>
+
+  <br>
+  <br>
+  
+  
+    <p><ngb-progressbar [showValue]="true" type="success" [value]="25"></ngb-progressbar></p>
+    <p><ngb-progressbar [showValue]="true" type="info" [value]="50"></ngb-progressbar></p>
+    <p><ngb-progressbar [showValue]="true" type="warning" [value]="150" [max]="200"></ngb-progressbar></p>
+    <p><ngb-progressbar [showValue]="true" type="danger" [value]="150" [max]="150"></ngb-progressbar></p>
+  
+  
+    <br>
+    <br>
+
+
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+
+    <br>
+    <br>
+
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+      
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+      </div>
+
+    <br>
+    <br>
+  
+  
+  
+  
+    <ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="lg"></ngb-pagination>
+    <ngb-pagination [collectionSize]="50" [(page)]="currentPage"></ngb-pagination>
+    <ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="sm"></ngb-pagination>
+    
+  
+  
+  
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  
+  
+  
+  <p>You can introduce custom directives for table headers to sort columns</p>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col" sortable="name" (sort)="onSort($event)">Country</th>
+      <th scope="col" sortable="area" (sort)="onSort($event)">Area</th>
+      <th scope="col" sortable="population" (sort)="onSort($event)">Population</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let country of countries">
+      <th scope="row">{{ country.id }}</th>
+      <td>
+        <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="me-2" style="width: 20px">
+        {{ country.name }}
+      </td>
+      <td>{{ country.area | number }}</td>
+      <td>{{ country.population | number }}</td>
+    </tr>
+    </tbody>
+  </table>
+  
+  
+  
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  
+  <div class="card" style="width: 18rem;">
+    <img src="https://via.placeholder.com/320x160" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <h5 class="card-header">Featured</h5>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav>
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+  
+  <br>
+<br>
+<br>
+
+  
+
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  </div> <!-- END CONTAINER -->

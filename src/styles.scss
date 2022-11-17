@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+// PROJECT THEME
+@import "theme.scss";
+// PROJECT ICONS
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+// GLOBAL STYLES
+
+
+.f-experiment {
+    font-weight: 600;
+    font-stretch: 75%;
+    font-variation-settings: "ital" 10, "wdth" 125;
+    // ital = 1-10
+    // wdth = 125
+}
+
+h1 {
+    font-weight: 900;
+    font-stretch: 75%;
+    font-variation-settings: "ital" 0, "wdth" 100;
+}
+h2 {
+    font-weight: 700;
+    font-stretch: 75%;
+    font-variation-settings: "ital" 0, "wdth" 100;
+}
+h3 {
+    font-weight: 500;
+    font-stretch: 75%;
+    font-variation-settings: "ital" 0, "wdth" 100;
+}
+
+
+p {
+    font-size: 1.2rem;
+    font-weight: 275;
+    font-stretch: 100%;
+    font-variation-settings: "ital" 0, "wdth" 100;
+}
+.lead {
+    font-size: 1.9rem;
+    line-height: 1.3;
+    font-weight: 360;
+    font-stretch: 100%;
+    font-variation-settings: "ital" 0, "wdth" 100;
+}
+
+
+
+.icon-xlg {
+    font-size: 6rem;
+}
+.icon-sm {
+    font-size: 2rem;
+}
